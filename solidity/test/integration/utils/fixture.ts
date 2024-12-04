@@ -57,7 +57,7 @@ export const fixture = deployments.createFixture(
     const walletRegistry = await helpers.contracts.getContract<WalletRegistry>(
       "WalletRegistry"
     )
-    const t = await helpers.contracts.getContract("T")
+    const t = await helpers.contracts.getContract("Trap")
     const staking = await helpers.contracts.getContract("TokenStaking")
 
     await tbtc.connect(deployer).transferOwnership(tbtcVault.address)
