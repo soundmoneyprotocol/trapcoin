@@ -90,7 +90,7 @@ async function registerOperators(
   const ecdsaSortitionPool = await helpers.contracts.getContract<SortitionPool>(
     "EcdsaSortitionPool"
   )
-  const t = await helpers.contracts.getContract("T")
+  const t = await helpers.contracts.getContract("Trap")
   const staking = await helpers.contracts.getContract("TokenStaking")
 
   if (await ecdsaSortitionPool.isChaosnetActive()) {

@@ -6,5 +6,5 @@ import "@thesis/solidity-contracts/contracts/token/ERC20WithPermit.sol";
 import "@thesis/solidity-contracts/contracts/token/MisfundRecovery.sol";
 
 contract TCBTC is TBTC, ERC20WithPermit, MisfundRecovery {
-    constructor() ERC20WithPermit("tBTC v2", "tBTC") {}
+    constructor() ERC20WithPermit("tcBTC v2", "tcBTC") {}
 }

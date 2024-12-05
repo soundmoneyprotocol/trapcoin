@@ -9,7 +9,7 @@ import "@thesis/solidity-contracts/contracts/token/ERC20WithPermit.sol";
 import "@thesis/solidity-contracts/contracts/token/MisfundRecovery.sol";
 
 /// @title T token
-/// @notice Threshold Network T token
+/// @notice TrapCoinBTC
 /// @dev By default, token balance does not account for voting power.
 ///      This makes transfers cheaper. The downside is that it requires users
 ///      to delegate to themselves to activate checkpoints and have their
@@ -22,7 +22,7 @@ contract T is ERC20WithPermit, MisfundRecovery, Checkpoints {
             "Delegation(address delegatee,uint256 nonce,uint256 deadline)"
         );
 
-    constructor() ERC20WithPermit("Threshold Network Token", "T") {}
+    constructor() ERC20WithPermit("TrapCoinBTC", "TRAP") {}
 
     /// @notice Delegates votes from signatory to `delegatee`
     /// @param delegatee The address to delegate votes to
